@@ -1,0 +1,6 @@
+{
+  "extensionDescription": {
+    "message": "Shows Douban ratings and popular short comments on Goodreads book pages. Requires access to Douban search and book pages.",
+    "description": "Explains where the extension runs and why it needs Douban access."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "extensionDescription": {
+    "message": "在 Goodreads 图书详情页显示豆瓣评分和热门短评。需要访问豆瓣搜索页和图书页面。",
+    "description": "说明扩展的使用页面及访问豆瓣的用途。"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Goodreads + Douban",
+  "version": "0.1.0",
+  "default_locale": "en",
+  "description": "__MSG_extensionDescription__",
+  "permissions": [],
+  "host_permissions": [
+    "https://www.goodreads.com/book/show/*",
+    "https://goodreads.com/book/show/*",
+    "https://search.douban.com/book/*",
+    "https://book.douban.com/subject/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.goodreads.com/book/show/*", "https://goodreads.com/book/show/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
