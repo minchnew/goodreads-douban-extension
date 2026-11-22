@@ -5,11 +5,11 @@ A local Chrome Manifest V3 extension that adds a Douban book information panel t
 ## What it does
 
 1. Runs on Goodreads `/book/show/...` pages.
-2. Reads the book title and author from the page.
+2. Reads the book title from the page.
 3. Searches Douban Books for a matching title.
 4. Shows the Douban title and author, overall rating and stars, rating count, and up to five popular short comments. Each comment includes its author, star rating, date/location when available, and helpful vote count.
 
-The extension sends the Goodreads book title as a search query to Douban and includes your existing Douban cookies on requests to `search.douban.com` and `book.douban.com` so Douban can recognize your session. It does not read or store those cookies. Douban may still require verification or rate-limit requests; in that case the panel shows an error and lets you retry.
+The extension sends the Goodreads book title as a search query to Douban. The browser may include your existing Douban cookies on requests to `search.douban.com` and `book.douban.com` so Douban can recognize your session; the extension does not read or store cookie values. Lookup responses are processed in memory and are not sent to an extension developer server. Douban may still require verification or rate-limit requests; in that case the panel shows an error and lets you retry. See [PRIVACY.md](PRIVACY.md) for the privacy disclosure.
 
 ## Load it in Chrome
 
